@@ -1,0 +1,4 @@
+Params: 
+  styles:
+    - "static/css/_global.css"
+    - "static/css/grid.css"
