@@ -1,4 +1,6 @@
-Params: 
+
   styles:
-    - "static/css/_global.css"
-    - "static/css/grid.css"
+    - "css/_global.css"
+    - "css/grid.css"
+    - "css/index.css"
+  
