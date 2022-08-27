@@ -5,11 +5,15 @@
   "postMetaWordCount" .WordCount}}</span>{{ end }}
 {{ if .Site.Params.showReadTime }}<span><i class="iconfont icon-time-sharp"></i>&nbsp;{{ i18n "postMetaReadingTime"
   .ReadingTime }}</span>{{ end }}
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;{{ if .Params.tags }}{{ range .Params.tags }}<a href="/tags/ {{ relURL }}{{ . | urlize}}">{{ . }}</a>&nbsp;{{ end }}{{ else }}{{ i18n "postMetaNoTag" }}{{ end }}</span>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;
+  {{ if .Params.tags }}
+  {{ range .Params.tags }}<a href={{ "/tags/" | relURL }}{{ . | urlize}}>{{ . }}</a>&nbsp;{{ end }}
+  {{ else }}{{ i18n "postMetaNoTag" }}{{ end }}</span>
   
 <span>
   <i class="iconfont icon-pricetags-sharp"></i>&nbsp;
-  {{if .Params.culture }} {{range .Params.culture }}
-  <a href="/cultures/{{ lower . }}">{{ lower . }}</a>&nbsp;
+  {{if .Params.culture }} 
+  {{range .Params.culture }}
+  <a href="/cultures/{{ lower . }}">{{ lower . | urlize}}</a>&nbsp;
   {{end}}{{end}}
 </span>

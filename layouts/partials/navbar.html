@@ -1,0 +1,12 @@
+{{ define "navbar" }}
+
+<nav>
+
+{{ range .Site.Taxonomies.cultures }}
+<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+
+{{ end }}
+
+</nav>
+
+{{ end }}
