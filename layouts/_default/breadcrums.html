@@ -1,0 +1,9 @@
+<p>
+
+  {{ with .Parent }}
+  {{ .Render "breadcumbs"}}
+    {{ if .Parent }} {{.Parent.Title}} | {{ end }}
+    <a href="{{ .Permalink }}">{{ .Title }} | </a>
+  {{ end }}
+   {{ .Title }}</a>
+</p>

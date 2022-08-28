@@ -1,7 +1,13 @@
 {{ define "header" }}
 
-<h1 class="page_title">
-  {{ .Title }}
-</h1>
+<header>
+
+  <h1 class="page_title">
+    {{ .Title }}
+  </h1>
+  
+  {{ .Render "breadcrums" }}
+</header>
+
 
 {{ end }}
