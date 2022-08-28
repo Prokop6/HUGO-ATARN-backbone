@@ -3,14 +3,17 @@
 
 {{ block "head" . }} {{ end }}
 
-{{ block "navbar" . }} {{ end }}
-
 <body>
+
   {{ block "header" . }} {{ end }}
+  
+  {{ block "navbar" . }} {{ end }}
 
   {{ block "main" . }} {{ end }}
 
   {{ block "footer" . }} {{ end }}
+
+  "source: layout/defaults/list"
 </body>
 
 </html>
