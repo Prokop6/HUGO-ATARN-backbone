@@ -12,6 +12,7 @@ header {
 
 nav {
   grid-area: n;
+  background-color: gray;
 }
 
 main {
