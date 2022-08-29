@@ -1,7 +1,23 @@
+html {
+  height: 100%;
+}
+article {
+  padding: 2rem;
+}
+
 body {
   color: antiquewhite;
   background-color: black;
   display: grid;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  display: block;
+  height: 100%;
+  overflow-x: auto;
 }
 
 .splash {
@@ -9,4 +25,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+}
+
+.breadcrumbs {
+  display: block;
+  color: black;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(186, 186, 186, 1) 100%);
+  border: 2px, 0, darkslategray
 }
