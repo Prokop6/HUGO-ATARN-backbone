@@ -1,0 +1,6 @@
+  {{ if .Parent }}
+    {{ with .Parent }}
+    {{ .Render "breadcrumbs_recr" }}  
+    <a href="{{ .Permalink }}">{{ .Title }}</a> |  
+    {{ end }}
+  {{ end }}
