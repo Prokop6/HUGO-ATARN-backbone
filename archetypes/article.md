@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: false
 signature: 
 
-culture: 
+cultures: 
 author:
 type: article 
 ---
