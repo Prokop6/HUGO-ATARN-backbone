@@ -4,6 +4,7 @@
   <hr>
   <a href='{{ "article" | absURL }}'>All articles</a>
   <hr>
+  Archery traditions:
   {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
     {{ range $key, $value := $taxonomy }}
       <a href="{{ $taxonomyname | absURL }}{{ $key | relURL }}">{{ $key }}</a> 
