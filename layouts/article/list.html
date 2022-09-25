@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<main>
+
+  {{ range .Pages }}
+  
+  <ul>
+    <a href="{{ .Page.Permalink }}">
+      {{ .Render "summary"}}
+    </a>
+  </ul>
+  {{ end }}
+  
+  "Source: layouts/articles/list"
+
+</main>
+
+
+{{ end }}
