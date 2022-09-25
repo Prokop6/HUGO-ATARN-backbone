@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<main>
+
+  {{ range .Pages }}
+  
+  <ul>
+    <a href="{{ .Page.Permalink }}">
+      {{ .Page.Name }}
+    </a>
+  </ul>
+  {{ end }}
+  
+  "Source: layouts/_default/taxonomy"
+
+</main>
+
+
+{{ end }}
