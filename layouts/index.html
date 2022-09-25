@@ -1,15 +1,10 @@
 {{ define "main"}}
-
 <main>
-
   <h1>
     {{ .Page.Params.Greeter }}
   </h1>
-  
   <img class="splash" src="{{ .Page.Params.Splash }}" alt="">
-  
   {{ .Content }}
-  
+  "Source: layouts/default/index"
 </main>
-
 {{end}}
