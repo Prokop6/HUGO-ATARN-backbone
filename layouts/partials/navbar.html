@@ -1,12 +1,15 @@
 {{ define "navbar" }}
-
 <nav>
-
-{{ range .Site.Taxonomies.cultures }}
-<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
-
-{{ end }}
-
+  <a href='{{ "what-is" | relURL }}'>What is ATARN?</a>
+  <hr>
+  <a href='{{ "article" | absURL }}'>All articles</a>
+  <hr>
+  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    {{ range $key, $value := $taxonomy }}
+      <a href="{{ $taxonomyname | absURL }}{{ $key | relURL }}">{{ $key }}</a> 
+    {{ end }}
+  {{ end }}
+  <hr>
+  <a href='{{ "contact" | relURL }}'>Contact</a>
 </nav>
-
 {{ end }}
