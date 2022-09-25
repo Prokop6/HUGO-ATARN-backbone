@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main>
+  {{ .Page.Params.Title }}
+  {{ .Data.Params.Image }}
+  {{ .Page.Params.Description }}
+  <section class="articles">
+    {{ range .Pages }}
+    {{ .Render "preview_block"  }}
+    {{ end }}
+  </section>
+  "Source: layouts/cultures/terms"
+</main>
+{{ end }}

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main>
+  <img src={{ .Page.Params.Image }} class="taxonomy_image" >
+  {{ .Page.Params.Description }}
+  <section class="articles">
+    {{ range .Pages }}
+    {{ .Render "preview_block"  }}
+    {{ end }}
+  </section>
+  "Source: layouts/cultures/taxonomy"
+</main>
+{{ end }}
